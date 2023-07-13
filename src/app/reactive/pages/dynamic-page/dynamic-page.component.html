@@ -40,7 +40,8 @@
   <div class="mb-3 row">
     <label class="col-sm-3 col-form-label">Favoritos</label>
     <div class="col-sm-9" formArrayName="favoriteGames">
-      <div class="mb-1" *ngFor="let favourite of favoriteGamesControls.controls; let i = index">
+      <div class="mb-1"
+      *ngFor="let favourite of favoriteGamesControls.controls; let i = index">
         <div class="input-group">
           <input
           [formControlName]="i"
